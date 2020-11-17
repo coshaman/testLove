@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>짝사랑 테스트</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylepast.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <style type="text/css">
+    </style>
+    <style>
+	header {
+	     z-index: 500;
+	      position: fixed;
+	      top: 0;
+	      left: 0;
+	      right: 0;
+	      font-size: 16px;
+	      height: 50px;
+	      padding: 1rem;
+	      color: white;
+	      background: black;
+	      display: flex;
+	      align-items: center;
+	      letter-spacing: 5px;
+	      opacity: 0.8;
+	}
+	.active {
+    		background-color: #4CAF50;
+	}
+	.circle {
+            margin: 25px 10px;
+            width: 200px;
+            color: #fff;
+            font-size: 32px;
+            line-height: 200px;
+            text-align: center;
+            height: 200px;
+            border-radius: 100px;
+        }
+
+        .bg-green {
+            background: #5bd5a0;
+        }
+
+        .bg-yellow {
+            background: #ffcc35;
+        }
+
+        .back {
+          position: fixed;
+          padding: 0;
+          margin: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: white;
+          animation-name: backdiv;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+        }
+
+        .heart {
+
+          margin: auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: pink;
+          height: 50px;
+          width: 50px;
+          transform: rotate(-45deg);
+          animation-name: beat;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+        }
+        .heart:after {
+          background-color: pink;
+          content: "";
+          border-radius: 50%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 0px;
+          left: 25px;
+        }
+        .heart:before {
+          background-color: pink;
+          content: "";
+          border-radius: 50%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: -25px;
+          left: 0px;
+        }
+
+        @keyframes backdiv {
+          50% {
+            background: #ffe6f2;
+          }
+        }
+
+        @keyframes beat {
+          0% {
+            transform: scale(1) rotate(-45deg);
+          }
+          50% {
+            transform: scale(0.6) rotate(-45deg);
+          }
+        }
+        .drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+    </style>
+    <script>
+    </script>
+</head>
+<body style="background-color : #ffe6f2">
+    <!--<header style="text-align: left;">
+      <nav>
+        <span class="active" style="color: white; font-size: 25px"><a href="#" style="color: white; text-decoration: none;">Main</a></span>
+        <span><a href="#wrap3" style="color: white; text-decoration: none;">소개/수상</a></span>
+        <span><a href="#project" style="color: white; text-decoration: none;">프로젝트</a></span>
+        <span><a href="#comments" style="color: white; text-decoration: none;">방명록</a></span>
+      </nav>
+    </header>-->
+
+    <!--<div style="position: fixed; bottom: 2px; right: 10px">
+        <a href="#"><i class="fas fa-sort-up fa-5x"></i></a>
+    </div>-->
+    <!--<div data-wow-delay="0.5s" class="wow zoomIn">
+        <p class="circle bg-yellow">zoomIn</p>
+    </div>-->
+    <div style="margin-top: 10%; text-align : center;" data-wow-delay="0.2s" class="wow zoomIn drag">
+      <p style="color : #F781F3; font-size : 45px; font-family: 'Single Day', cursive;">짝사랑 테스트!</p>
+      <p style="color : #B40486; font-size : 35px; font-family : 'Nanum Pen Script', cursive;">나는 그사람을 얼마나 사랑하고 있을까요?<br>그사람은 나를 사랑하고 있을까요?</p>
+      <div class="heart"></div>
+      <button type="button" class="btn btn-info" style="margin-top : 3%;" onclick="location.href='test.html'">검사 시작</button>
+    </div>
+
+</body>
+</html>

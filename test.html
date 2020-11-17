@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>짝사랑 테스트</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="teststyle.css" />
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <style type="text/css">
+    </style>
+    <style>
+      .drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
+    </style>
+    <script>
+    </script>
+</head>
+<body style="background-color : #ffe6f2">
+    <!--<header style="text-align: left;">
+      <nav>
+        <span class="active" style="color: white; font-size: 25px"><a href="#" style="color: white; text-decoration: none;">Main</a></span>
+        <span><a href="#wrap3" style="color: white; text-decoration: none;">소개/수상</a></span>
+        <span><a href="#project" style="color: white; text-decoration: none;">프로젝트</a></span>
+        <span><a href="#comments" style="color: white; text-decoration: none;">방명록</a></span>
+      </nav>
+    </header>-->
+
+    <!--<div style="position: fixed; bottom: 2px; right: 10px">
+        <a href="#"><i class="fas fa-sort-up fa-5x"></i></a>
+    </div>-->
+    <!--<div data-wow-delay="0.5s" class="wow zoomIn">
+        <p class="circle bg-yellow">zoomIn</p>
+    </div>-->
+    <script src="test.js"></script>
+    <div style="margin-top: 10%; text-align : center;" data-wow-delay="0.2s" class="wow zoomIn drag">
+        <p style="color : #F781F3; font-size : 45px; font-family: 'Single Day', cursive;">짝사랑 테스트!</p>
+        <center>
+            <table style="text-align : center;" id="main">
+                <tr>
+                    <td><p style="color : #B40486; font-size : 35px; font-family : 'Nanum Pen Script', cursive;">내가 그 사람을 얼마나 <br>사랑하는지 알고 싶어요!</p></td>
+                    <td style="width : 20px;"></td>
+                    <td><p style="color : #B40486; font-size : 35px; font-family : 'Nanum Pen Script', cursive;">그 사람이 나를 <br>사랑하는지 알고 싶어요!</p></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-info" onclick="test1();">검사1 시작</button></td>
+                    <td style="width : 20px;"></td>
+                    <td><button type="button" class="btn btn-info" onclick="test2();">검사2 시작</button></td>
+                </tr>
+            </table>
+        </center><center>
+        <div id="test1" class="wow zoomIn drag" style="display : none; color : darkblue; font-size : 25px; font-family : 'Black Han Sans'; width : 50%; text-align : left;">
+            <input type="checkbox" id="c1" name="test1c" />
+            <label for="c1"><span></span>그 사람 곁에 있으면 내가 어떻게 보일지, 뭘 해야 할지 고민된다.</label><br />
+            <input type="checkbox" id="c2" name="test1c" />
+            <label for="c2"><span></span>다른 사람의 연락은 씹어도 그 사람의 연락은 가능하면 항상 답해준다.</label><br />
+            <input type="checkbox" id="c3" name="test1c" />
+            <label for="c3"><span></span>숙제를 도와주거나 간식을 챙겨주는 등 감정과 에너지를 투자한다.</label><br />
+            <input type="checkbox" id="c4" name="test1c" />
+            <label for="c4"><span></span>자기 전에 자주 생각난다.</label><br />
+            <input type="checkbox" id="c5" name="test1c" />
+            <label for="c5"><span></span>그 사람의 의견을 항상 존중해준다.</label><br />
+            <input type="checkbox" id="c6" name="test1c" />
+            <label for="c6"><span></span>그 사람의 동기부여로 무언가를 더 열심히 하게 된다.</label><br />
+            <input type="checkbox" id="c7" name="test1c" />
+            <label for="c7"><span></span>꿈에서 얼굴과 이름을 인식할 수 있는 상태로 만난다.</label><br />
+            <input type="checkbox" id="c8" name="test1c" />
+            <label for="c8"><span></span>그 사람의 단점을 수용할 수 있다.</label><br />
+            <input type="checkbox" id="c9" name="test1c" />
+            <label for="c9"><span></span>그 사람을 돕는 것이 기쁘다.</label><br />
+            <input type="checkbox" id="c10" name="test1c" />
+            <label for="c10"><span></span>자꾸 그 사람을 웃기고 싶다.</label><br />
+            <input type="checkbox" id="c11" name="test1c" />
+            <label for="c11"><span></span>그 사람에게 시선이 가게 된다.</label><br />
+            <input type="checkbox" id="c12" name="test1c" />
+            <label for="c12"><span></span>가까운 사람을 잃는 등 삶의 중대한 사건이 일어났을 때에도 굳건하게 지낼 수 있다(또는 그랬다)</label><br />
+            <input type="checkbox" id="c13" name="test1c" />
+            <label for="c13"><span></span>그 사람이 없었다면 하지 않았을 것 같은 일들을 했다.</label><br />
+            <input type="checkbox" id="c14" name="test1c" />
+            <label for="c14"><span></span>그 사람이 내가 아닌 다른 친구들과 시간을 보내더라도 괜찮다.</label><br />
+            <input type="checkbox" id="c15" name="test1c" />
+            <label for="c15"><span></span>그 사람이 함께하지 않더라도 나의 취미와 개성을 어느정도 지킨다.</label><br />
+            <input type="checkbox" id="c16" name="test1c" />
+            <label for="c16"><span></span>솔직하게 말하거나 함께 농담을 주고받을 수 있다.</label><br />
+            <input type="checkbox" id="c17" name="test1c" />
+            <label for="c17"><span></span>나의 단점과 슬픔을 노출해도 괜찮다.</label><br />
+            <input type="checkbox" id="c18" name="test1c" />
+            <label for="c18"><span></span>그 사람의 모습을 칭찬하고 싶거나 감탄하게 된다.</label><br />
+            <input type="checkbox" id="c19" name="test1c" />
+            <label for="c19"><span></span>사랑 노래를 들으면서 생각난다.</label><br />
+            <input type="checkbox" id="c20" name="test1c" />
+            <label for="c20"><span></span>그 사람에 대해 알아보고 찾아보려고 한다.</label><br />
+            <input type="checkbox" id="c21" name="test1c" />
+            <label for="c21"><span></span>그 사람에게 최선이고 하고 싶은 것이라면 내가 원치 않아도 함께 한다.</label><br />
+            <input type="checkbox" id="c22" name="test1c" />
+            <label for="c22"><span></span>그 사람이 다른 사람과 잘되려고 하면 질투가 난다. 그러나 그 사람의 결정을 존중할 수 있다.</label><br />
+            <button type="button" class="btn btn-info" onclick="test1co();">완료</button><br />
+        </div></center><center>
+        <div id="test2" class="wow zoomIn drag" style="display : none; color : darkblue; font-size : 25px; font-family : 'Black Han Sans'; width : 50%; text-align : left;">
+            <input type="checkbox" id="b1" name="test2c" />
+            <label for="b1"><span></span>그 사람 곁에 있으면 내가 어떻게 보일지, 뭘 해야 할지 고민된다.</label><br />
+            <input type="checkbox" id="b2" name="test2c" />
+            <label for="b2"><span></span>다른 사람의 연락은 씹어도 그 사람의 연락은 가능하면 항상 답해준다.</label><br />
+            <input type="checkbox" id="b3" name="test2c" />
+            <label for="b3"><span></span>숙제를 도와주거나 간식을 챙겨주는 등 감정과 에너지를 투자한다.</label><br />
+            <input type="checkbox" id="b4" name="test2c" />
+            <label for="b4"><span></span>자기 전에 자주 생각난다.</label><br />
+            <input type="checkbox" id="b5" name="test2c" />
+            <label for="b5"><span></span>그 사람의 의견을 항상 존중해준다.</label><br />
+            <input type="checkbox" id="b6" name="test2c" />
+            <label for="b6"><span></span>그 사람의 동기부여로 무언가를 더 열심히 하게 된다.</label><br />
+            <input type="checkbox" id="b7" name="test2c" />
+            <label for="b7"><span></span>꿈에서 얼굴과 이름을 인식할 수 있는 상태로 만난다.</label><br />
+            <input type="checkbox" id="b8" name="test2c" />
+            <label for="b8"><span></span>그 사람의 단점을 수용할 수 있다.</label><br />
+            <input type="checkbox" id="b9" name="test2c" />
+            <label for="b9"><span></span>그 사람을 돕는 것이 기쁘다.</label><br />
+            <input type="checkbox" id="b10" name="test2c" />
+            <label for="b10"><span></span>자꾸 그 사람을 웃기고 싶다.</label><br />
+            <input type="checkbox" id="b11" name="test2c" />
+            <label for="b11"><span></span>그 사람에게 시선이 가게 된다.</label><br />
+            <input type="checkbox" id="b12" name="test2c" />
+            <label for="b12"><span></span>가까운 사람을 잃는 등 삶의 중대한 사건이 일어났을 때에도 굳건하게 지낼 수 있다(또는 그랬다)</label><br />
+            <input type="checkbox" id="b13" name="test2c" />
+            <label for="b13"><span></span>그 사람이 없었다면 하지 않았을 것 같은 일들을 했다.</label><br />
+            <input type="checkbox" id="b14" name="test2c" />
+            <label for="b14"><span></span>그 사람이 내가 아닌 다른 친구들과 시간을 보내더라도 괜찮다.</label><br />
+            <input type="checkbox" id="b15" name="test2c" />
+            <label for="b15"><span></span>그 사람이 함께하지 않더라도 나의 취미와 개성을 어느정도 지킨다.</label><br />
+            <input type="checkbox" id="b16" name="test2c" />
+            <label for="b16"><span></span>솔직하게 말하거나 함께 농담을 주고받을 수 있다.</label><br />
+            <input type="checkbox" id="b17" name="test2c" />
+            <label for="b17"><span></span>나의 단점과 슬픔을 노출해도 괜찮다.</label><br />
+            <input type="checkbox" id="b18" name="test2c" />
+            <label for="b18"><span></span>그 사람의 모습을 칭찬하고 싶거나 감탄하게 된다.</label><br />
+            <input type="checkbox" id="b19" name="test2c" />
+            <label for="b19"><span></span>사랑 노래를 들으면서 생각난다.</label><br />
+            <input type="checkbox" id="b20" name="test2c" />
+            <label for="b20"><span></span>그 사람에 대해 알아보고 찾아보려고 한다.</label><br />
+            <input type="checkbox" id="b21" name="test2c" />
+            <label for="b21"><span></span>그 사람에게 최선이고 하고 싶은 것이라면 내가 원치 않아도 함께 한다.</label><br />
+            <input type="checkbox" id="b22" name="test2c" />
+            <label for="b22"><span></span>그 사람이 다른 사람과 잘되려고 하면 질투가 난다. 그러나 그 사람의 결정을 존중할 수 있다.</label><br />
+            <button type="button" class="btn btn-info" onclick="test2co();">완료</button><br />
+        </div></center>
+        <div id="result" class="wow zoomIn drag" style="display : none; font-size : 30px; font-family : 'Single Day';">
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
