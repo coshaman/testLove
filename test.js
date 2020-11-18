@@ -4,10 +4,10 @@ function test1() {
     //alert(document.getElementsByName('test1c').length);
 }
 function test1co() {
-  let pro = document.getElementsByName('test1c').length;
+  let pro = document.getElementsByName('test2c').length;
   let point = 0;
   for (var i=0; i<pro; i++) {
-      if (document.getElementsByName("test1c")[i].checked == true) {
+      if (document.getElementsByName("test2c")[i].checked == true) {
           point += 1;
       }
   }
@@ -22,10 +22,10 @@ function test2() {
     //alert(document.getElementsByName('test1c').length);
 }
 function test2co() {
-  let pro = document.getElementsByName('test2c').length;
+  let pro = document.getElementsByName('test1c').length;
   let point = 0;
   for (var i=0; i<pro; i++) {
-      if (document.getElementsByName("test2c")[i].checked == true) {
+      if (document.getElementsByName("test1c")[i].checked == true) {
           point += 1;
       }
   }

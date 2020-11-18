@@ -53,65 +53,71 @@
         <center>
             <table style="text-align : center;" id="main">
                 <tr>
-                    <td><p style="color : #B40486; font-size : 35px; font-family : 'Nanum Pen Script', cursive;">내가 그 사람을 얼마나 <br>사랑하는지 알고 싶어요!</p></td>
+                    <td><p style="color : #B40486; font-size : 4vw; font-family : 'Nanum Pen Script', cursive;">내가 그 사람을 얼마나 <br>사랑하는지 알고 싶어요!</p></td>
                     <td style="width : 20px;"></td>
-                    <td><p style="color : #B40486; font-size : 35px; font-family : 'Nanum Pen Script', cursive;">그 사람이 나를 <br>사랑하는지 알고 싶어요!</p></td>
+                    <td><p style="color : #B40486; font-size : 4vw; font-family : 'Nanum Pen Script', cursive;">그 사람이 나를 <br>사랑하는지 알고 싶어요!</p></td>
                 </tr>
                 <tr>
-                    <td><button type="button" class="btn btn-info" onclick="test1();">검사1 시작</button></td>
+                    <td><button type="button" class="btn btn-info" onclick="test1();" style="font-size:2.8vw;">검사1 시작</button></td>
                     <td style="width : 20px;"></td>
-                    <td><button type="button" class="btn btn-info" onclick="test2();">검사2 시작</button></td>
+                    <td><button type="button" class="btn btn-info" onclick="test2();" style="font-size:2.8vw;">검사2 시작</button></td>
                 </tr>
             </table>
         </center><center>
-        <div id="test1" class="wow zoomIn drag" style="display : none; color : darkblue; font-size : 25px; font-family : 'Black Han Sans'; width : 50%; text-align : left;">
-            <input type="checkbox" id="c1" name="test1c" />
-            <label for="c1"><span></span>그 사람 곁에 있으면 내가 어떻게 보일지, 뭘 해야 할지 고민된다.</label><br />
-            <input type="checkbox" id="c2" name="test1c" />
-            <label for="c2"><span></span>다른 사람의 연락은 씹어도 그 사람의 연락은 가능하면 항상 답해준다.</label><br />
-            <input type="checkbox" id="c3" name="test1c" />
-            <label for="c3"><span></span>숙제를 도와주거나 간식을 챙겨주는 등 감정과 에너지를 투자한다.</label><br />
-            <input type="checkbox" id="c4" name="test1c" />
-            <label for="c4"><span></span>자기 전에 자주 생각난다.</label><br />
-            <input type="checkbox" id="c5" name="test1c" />
-            <label for="c5"><span></span>그 사람의 의견을 항상 존중해준다.</label><br />
-            <input type="checkbox" id="c6" name="test1c" />
-            <label for="c6"><span></span>그 사람의 동기부여로 무언가를 더 열심히 하게 된다.</label><br />
-            <input type="checkbox" id="c7" name="test1c" />
-            <label for="c7"><span></span>꿈에서 얼굴과 이름을 인식할 수 있는 상태로 만난다.</label><br />
-            <input type="checkbox" id="c8" name="test1c" />
-            <label for="c8"><span></span>그 사람의 단점을 수용할 수 있다.</label><br />
-            <input type="checkbox" id="c9" name="test1c" />
-            <label for="c9"><span></span>그 사람을 돕는 것이 기쁘다.</label><br />
-            <input type="checkbox" id="c10" name="test1c" />
-            <label for="c10"><span></span>자꾸 그 사람을 웃기고 싶다.</label><br />
-            <input type="checkbox" id="c11" name="test1c" />
-            <label for="c11"><span></span>그 사람에게 시선이 가게 된다.</label><br />
-            <input type="checkbox" id="c12" name="test1c" />
-            <label for="c12"><span></span>가까운 사람을 잃는 등 삶의 중대한 사건이 일어났을 때에도 굳건하게 지낼 수 있다(또는 그랬다)</label><br />
-            <input type="checkbox" id="c13" name="test1c" />
-            <label for="c13"><span></span>그 사람이 없었다면 하지 않았을 것 같은 일들을 했다.</label><br />
-            <input type="checkbox" id="c14" name="test1c" />
-            <label for="c14"><span></span>그 사람이 내가 아닌 다른 친구들과 시간을 보내더라도 괜찮다.</label><br />
-            <input type="checkbox" id="c15" name="test1c" />
-            <label for="c15"><span></span>그 사람이 함께하지 않더라도 나의 취미와 개성을 어느정도 지킨다.</label><br />
-            <input type="checkbox" id="c16" name="test1c" />
-            <label for="c16"><span></span>솔직하게 말하거나 함께 농담을 주고받을 수 있다.</label><br />
-            <input type="checkbox" id="c17" name="test1c" />
-            <label for="c17"><span></span>나의 단점과 슬픔을 노출해도 괜찮다.</label><br />
-            <input type="checkbox" id="c18" name="test1c" />
-            <label for="c18"><span></span>그 사람의 모습을 칭찬하고 싶거나 감탄하게 된다.</label><br />
-            <input type="checkbox" id="c19" name="test1c" />
-            <label for="c19"><span></span>사랑 노래를 들으면서 생각난다.</label><br />
-            <input type="checkbox" id="c20" name="test1c" />
-            <label for="c20"><span></span>그 사람에 대해 알아보고 찾아보려고 한다.</label><br />
-            <input type="checkbox" id="c21" name="test1c" />
-            <label for="c21"><span></span>그 사람에게 최선이고 하고 싶은 것이라면 내가 원치 않아도 함께 한다.</label><br />
-            <input type="checkbox" id="c22" name="test1c" />
-            <label for="c22"><span></span>그 사람이 다른 사람과 잘되려고 하면 질투가 난다. 그러나 그 사람의 결정을 존중할 수 있다.</label><br />
-            <button type="button" class="btn btn-info" onclick="test1co();">완료</button><br />
-        </div></center><center>
         <div id="test2" class="wow zoomIn drag" style="display : none; color : darkblue; font-size : 25px; font-family : 'Black Han Sans'; width : 50%; text-align : left;">
+            <input type="checkbox" id="c1" name="test1c" />
+            <label for="c1"><span></span>그 사람이 먼저 연락하지 않더라도 내가 연락하면 항상 답해준다. 또는 자주 연락한다.</label><br />
+            <input type="checkbox" id="c2" name="test1c" />
+            <label for="c2"><span></span>나와 자주 눈이 마주치거나 나를 바라보고 웃는다. 또는 나와 정면으로 대화할 때 눈을 잘 마주치지 못한다.</label><br />
+            <input type="checkbox" id="c3" name="test1c" />
+            <label for="c3"><span></span>같이 있을 때 최대한 몸을 밀착하려 하되, 나를 배려해준다.</label><br />
+            <input type="checkbox" id="c4" name="test1c" />
+            <label for="c4"><span></span>그 사람이 자신의 미래에 대한 얘기를 자주 한다.</label><br />
+            <input type="checkbox" id="c5" name="test1c" />
+            <label for="c5"><span></span>나의 의견을 항상 존중해준다.</label><br />
+            <input type="checkbox" id="c6" name="test1c" />
+            <label for="c6"><span></span>내가 웃거나 당황하거나 놀라는 등의 모습을 좋아하거나 보고 웃는다(비웃는 경우 체크 해제)</label><br />
+            <input type="checkbox" id="c7" name="test1c" />
+            <label for="c7"><span></span>나의 사소한 것에도 관심을 가지며 물어본다(일상, 가족관계 등등)</label><br />
+            <input type="checkbox" id="c8" name="test1c" />
+            <label for="c8"><span></span>나에게 여러가지 농담이나 유행어를 쓴다</label><br />
+            <input type="checkbox" id="c9" name="test1c" />
+            <label for="c9"><span></span>나의 개성이나 외모에 대해 조언 또는 참견을 한다.</label><br />
+            <input type="checkbox" id="c10" name="test1c" />
+            <label for="c10"><span></span>함께 있을 때, 대화할 때 초롱초롱한 강아지 눈이 된다.</label><br />
+            <input type="checkbox" id="c11" name="test1c" />
+            <label for="c11"><span></span>나의 주변에 있으면 잘 웃거나 당황, 긴장한다.</label><br />
+            <input type="checkbox" id="c12" name="test1c" />
+            <label for="c12"><span></span>나의 스킨십에 민감하게 반응한다.</label><br />
+            <input type="checkbox" id="c13" name="test1c" />
+            <label for="c13"><span></span>나에게 물질적, 시간적 투자와 배려를 한다.</label><br />
+            <input type="checkbox" id="c14" name="test1c" />
+            <label for="c14"><span></span>내 생각에 나를 사랑하고 있는 것 같다.</label><br />
+            <input type="checkbox" id="c15" name="test1c" />
+            <label for="c15"><span></span>안좋은 일, 우울한 일을 말하거나 화를 낼 때 나와 비슷한 감정을 느끼며, 나를 위로해준다.</label><br />
+            <input type="checkbox" id="c16" name="test1c" />
+            <label for="c16"><span></span>나에게 의미있는 칭찬을 해준다. 칭찬을 자주하지 않아도 내용이 의미있다.</label><br />
+            <input type="checkbox" id="c17" name="test1c" />
+            <label for="c17"><span></span>자신의 어린 시절 또는 힘든 시절의 이야기를 해주기도 한다. 또는 '아무한테도 안한 얘기인데...'라는 말을 들어봤다.</label><br />
+            <input type="checkbox" id="c18" name="test1c" />
+            <label for="c18"><span></span>방학, 휴가, 여행 중 그 사람의 연락을 받아봤다. 그리워한다는 직접적인 말이 없어도 된다.</label><br />
+            <input type="checkbox" id="c19" name="test1c" />
+            <label for="c19"><span></span>나를 매번 지적하지는 않아도 나의 실수를 지적하고 고쳐주려 한다.</label><br />
+            <input type="checkbox" id="c20" name="test1c" />
+            <label for="c20"><span></span>나의 성향이 그와 달라도 나를 이해해주려고 한다.</label><br />
+            <input type="checkbox" id="c21" name="test1c" />
+            <label for="c21"><span></span>내가 하고 싶은 것들을 가능하면 따라준다.</label><br />
+            <input type="checkbox" id="c22" name="test1c" />
+            <label for="c22"><span></span>나의 이야기를 잘 들어주고, 주제를 잘 돌리지 않는다.</label><br />
+            <input type="checkbox" id="c23" name="test1c" />
+            <label for="c23"><span></span>내가 누군가가 필요하거나 슬프다는 것을 알면 곁에 있어준다.</label><br />
+            <input type="checkbox" id="c24" name="test1c" />
+            <label for="c24"><span></span>나를 가능하면 자주 만나려고 하고, 우연히라도 만나면 항상 인사한다.</label><br />
+            <input type="checkbox" id="c25" name="test1c" />
+            <label for="c25"><span></span>나의 목표를 지지해주고 도와주려 한다.</label><br />
+            <button type="button" class="btn btn-info" onclick="test2co();">완료</button><br />
+        </div></center><center>
+        <div id="test1" class="wow zoomIn drag" style="display : none; color : darkblue; font-size : 25px; font-family : 'Black Han Sans'; width : 50%; text-align : left;">
             <input type="checkbox" id="b1" name="test2c" />
             <label for="b1"><span></span>그 사람 곁에 있으면 내가 어떻게 보일지, 뭘 해야 할지 고민된다.</label><br />
             <input type="checkbox" id="b2" name="test2c" />
@@ -156,7 +162,7 @@
             <label for="b21"><span></span>그 사람에게 최선이고 하고 싶은 것이라면 내가 원치 않아도 함께 한다.</label><br />
             <input type="checkbox" id="b22" name="test2c" />
             <label for="b22"><span></span>그 사람이 다른 사람과 잘되려고 하면 질투가 난다. 그러나 그 사람의 결정을 존중할 수 있다.</label><br />
-            <button type="button" class="btn btn-info" onclick="test2co();">완료</button><br />
+            <button type="button" class="btn btn-info" onclick="test1co();">완료</button><br />
         </div></center>
         <div id="result" class="wow zoomIn drag" style="display : none; font-size : 30px; font-family : 'Single Day';">
 
