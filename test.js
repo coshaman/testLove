@@ -73,7 +73,8 @@ function test2co() {
 
 function share1(){
   var tempElem = document.createElement('textarea');
-  tempElem.value = "https://coshaman.github.io/testLove/share.html?re:"+result * 10+":case:0";
+  let passre = ((result * 10) + 231) * 21
+  tempElem.value = "https://coshaman.github.io/testLove/share.html?re:"+passre+":case:0";
   document.body.appendChild(tempElem);
 
   tempElem.select();
@@ -84,7 +85,8 @@ function share1(){
 }
 function share2(){
   var tempElem = document.createElement('textarea');
-  tempElem.value = "https://coshaman.github.io/testLove/share.html?re:"+result * 10+":case:1";
+  let passre = ((result * 10) + 231) * 21
+  tempElem.value = "https://coshaman.github.io/testLove/share.html?re:"+passre+":case:1";
   document.body.appendChild(tempElem);
 
   tempElem.select();
