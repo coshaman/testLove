@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>짝사랑 테스트</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="teststyle.css" />
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <style type="text/css">
+    </style>
+    <style>
+      .drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
+    </style>
+    <script>
+    </script>
+</head>
+<body style="background-color : #ffe6f2">
+    <!--<header style="text-align: left;">
+      <nav>
+        <span class="active" style="color: white; font-size: 25px"><a href="#" style="color: white; text-decoration: none;">Main</a></span>
+        <span><a href="#wrap3" style="color: white; text-decoration: none;">소개/수상</a></span>
+        <span><a href="#project" style="color: white; text-decoration: none;">프로젝트</a></span>
+        <span><a href="#comments" style="color: white; text-decoration: none;">방명록</a></span>
+      </nav>
+    </header>-->
+
+    <!--<div style="position: fixed; bottom: 2px; right: 10px">
+        <a href="#"><i class="fas fa-sort-up fa-5x"></i></a>
+    </div>-->
+    <!--<div data-wow-delay="0.5s" class="wow zoomIn">
+        <p class="circle bg-yellow">zoomIn</p>
+    </div>-->
+
+
+    <div style="margin-top: 10%; text-align : center;" data-wow-delay="0.2s" class="wow zoomIn drag">
+        <p style="color : #F781F3; font-size : 45px; font-family: 'Single Day', cursive;">짝사랑 테스트!</p>
+
+        <div id="result" class="wow zoomIn drag" style="font-size : 30px; font-family : 'Single Day';">
+          결과 : 당신은 그 사람을 <br><p style='font-size : 45px; color:orange;'> 0%</p>만큼 사랑합니다!
+        </div>
+        <div style="height : 3vh;"></div>
+    </div>
+    <script>
+      let temp = location.href.split("?");
+      let data = temp[1].split(":");
+      let result = data[1];
+      result = result / 10;
+      let ten = data[3];
+      ten *= 1;
+      let message = "결과 : 당신은 그 사람을 <br><p style='font-size : 45px; color:orange;'>" + result + "%</p>만큼 사랑합니다!";
+
+      if(ten == 0){
+        if(result <= 20){
+          message = "결과 : 당신은 그 사람을 <br><p style='font-size : 45px; color:orange;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:orange; font-family : '>아직은 관심을 가지고 있지 않는, 그냥 아는 사람의 관계군요! 이 마음 유지해서 솔로의 길을 걸으세요!</p>";
+
+        }
+        else if(result <= 50){
+          message = "결과 : 당신은 그 사람을 <br><p style='font-size : 45px; color:skyblue;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:skyblue; font-family : '>점점 관심을 가지고 있지만, 아직 적극적으로 표출하거나 사랑으로 발전하지 않은 단계입니다! 한 달 후에 재검사 어떤가요?</p>";
+
+        } else if(result <= 75){
+          message = "결과 : 당신은 그 사람을 <br><p style='font-size : 45px; color:green;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:green; font-family : '>그 사람에게 관심을 가졌고, 사랑의 감정으로 발달하고 있군요! 100점이 아니라고 사랑하지 않는 것이 아닙니다. 다음에 만날 때는 고백해보는 거 어떤가요?</p>";
+
+        } else if(result <= 100){
+          message = "결과 : 당신은 그 사람을 <br><p style='font-size : 45px; color:blue;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:blue; font-family : '>사실상 완벽한 사랑 중! 하지만 높은 점수라고 무조건 사랑은 아닐 수 있어요! 만약 집착이나 소유욕을 가지고 있다면 스스로를 돌아보고 고백해보는 건 어떤가요?</p>";
+
+        }
+        document.getElementById('result').innerHTML = message;
+      } else if(ten == 1){
+        if(result <= 20){
+          message = "결과 : 그 사람은 당신을 <br><p style='font-size : 45px; color:orange;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:orange; font-family : '>아직은 아는 사람 정도의 관계입니다! 만약 연예인을 넣고 돌리지 않았다면 말이죠!</p>";
+
+        }
+        else if(result <= 50){
+          message = "결과 : 그 사람은 당신을 <br><p style='font-size : 45px; color:skyblue;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:skyblue; font-family : '>그 사람이 당신에게 관심을 가지고 있거나, 호감을 가진 것이 분명합니다! 하지만 사랑이 아닐 수도 있으니 섣부른 판단은 금물!</p>";
+
+        } else if(result <= 75){
+          message = "결과 : 그 사람은 당신을 <br><p style='font-size : 45px; color:green;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:green; font-family : '>당신을 사랑하고 있는 것 같군요! 100점이 아니라고 사랑하지 않는 것이 아닙니다. 그 사람에 대한 나의 생각을 정리해보세요!</p>";
+
+        } else if(result <= 100){
+          message = "결과 : 그 사람은 당신을 <br><p style='font-size : 45px; color:blue;'>" + result + "%</p>만큼 사랑합니다! <p style='font-size : 25px; color:blue; font-family : '>사실상 완벽한 사랑 중! 하지만 높은 점수라고 무조건 사랑은 아닐 수 있어요! 집착이나 소유욕을 가진 사람일 수도 있으니 한 번 잘 살펴보세요!</p>";
+
+        }
+        document.getElementById('result').innerHTML = message;
+      }
+    </script>
+
+</body>
+</html>
